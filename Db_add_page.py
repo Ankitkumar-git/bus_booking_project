@@ -1,0 +1,18 @@
+from tkinter import*
+root=Tk()
+root.title('Database Add Page')
+h,w=root.winfo_screenheight(),root.winfo_screenwidth()
+root.geometry('%dx%d+0+0'%(w,h))
+bus=PhotoImage(file='.\\Bus_for_project.png')
+Label(root,text='\n\n\n\n').grid(row=0,column=0)
+Label(root,image=bus).grid(row=1,column=1,columnspan=12,padx=w//3.2)
+Label(root,text="Online Bus Booking System",font='Arial 28 bold',bg='light blue',fg='red').grid(row=2,column=2,columnspan=9,padx=w//3.2)
+Label(root,text='\n').grid(row=3,column=2)
+Label(root,text="Add New Details To Database",font='Arial 20 bold',bg='gainsboro',fg='green4').grid(row=4,column=2,columnspan=9,padx=w//3.2)
+Label(root,text='\n').grid(row=5,column=2)
+Button(root,text='New Operator',fg='black',bg='light green',font='Arial 12').grid(row=6,column=1,columnspan=7)
+Button(root,text='New Bus',fg='black',bg='orange',font='Arial 12').grid(row=6,column=5,columnspan=2)
+Button(root,text='New Route',fg='black',bg='light blue',font='Arial 12').grid(row=6,column=6,columnspan=2)
+Button(root,text='New Run',fg='black',bg='rosy brown',font='Arial 12').grid(row=6,column=7,columnspan=2)
+
+root.mainloop()
